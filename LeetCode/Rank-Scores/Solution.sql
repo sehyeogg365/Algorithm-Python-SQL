@@ -1,0 +1,4 @@
+1# Write your MySQL query statement below
+2SELECT score, DENSE_RANK() OVER (ORDER BY score DESC) AS `rank`
+3FROM Scores 
+4-- SELECT score, RANK() OVER (ORDER BY salary) AS salaryRanking FROM Salary;
